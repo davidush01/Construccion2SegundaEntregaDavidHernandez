@@ -34,7 +34,7 @@ public class AdminController implements ControllerInterfaces{
 	private PartnerValidator partnerValidator;
 	@Autowired
 	private ClubService service;
-	@Autowired
+	//@Autowired
 	private InvoiceDto invoiceDto;
 	private static final String MENU = "ingrese la opcion que desea \n 1.para crear socio \n 2. para ver historial de facturas de el socio \n 3. para ver historial de facturas de invitado \n 4. para la promocion de facturas \n 5. para cerrar sesion \n";
 

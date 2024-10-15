@@ -30,7 +30,7 @@ public class PartnerDaoImplementation implements PartnerDao {
 	 public PartnerRepository partnerRepository;
 
 	public boolean existsByUserId(PartnerDto partnerDto) throws Exception {
-		return partnerRepository.existsByUserTol(Helper.parse(partnerDto.getUserTol()));
+		return partnerRepository.existsByUserId(Helper.parse(partnerDto.getUserTol()));
     }
 
 	 @Override
@@ -52,7 +52,7 @@ public class PartnerDaoImplementation implements PartnerDao {
 	
 	 @Override
 	    public PartnerDto findByUserId(PartnerDto partnerDto) throws Exception {
-	       Partner partner = partnerRepository.findByUserTol(Helper.parse(partnerDto.getUserTol()));
+	       Partner partner = partnerRepository.findByUserId(Helper.parse(partnerDto.getUserTol()));
 	       return Helper.parse(partner);
 	    }
 

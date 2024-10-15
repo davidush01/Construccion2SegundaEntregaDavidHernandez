@@ -48,9 +48,9 @@ public class ClubService implements LoginService, AdminService, GuestService, Pa
 	private GuestDao guestDao;
 	@Autowired
 	private PartnerDao partnerDao;
-	@Autowired
+	//@Autowired
     private InvoiceDao invoiceDao;
-    @Autowired
+    //@Autowired
     private InvoiceDetailDao invoiceDetailDao;
 	public static UserDto user;
 	

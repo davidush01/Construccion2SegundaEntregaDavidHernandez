@@ -39,6 +39,7 @@ public class UserDaoImplementation implements UserDao {
 	public void createUser(UserDto userDto) throws Exception {
         User user = Helper.parse(userDto);
         userRepository.save(user);
+        userDto.setId(user.getId());
 	}
 
 	@Override

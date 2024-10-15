@@ -132,7 +132,7 @@ public abstract interface Helper {
 	    public static PartnerDto parse(Partner partner) {
 	        PartnerDto partnerDto = new PartnerDto();
 	        partnerDto.setId(partner.getId());
-	        partnerDto.setUserTol(parse(partner.getUserTol()));
+	        partnerDto.setUserTol(parse(partner.getUserId()));
 
 	        partnerDto.setAmount(partner.getAmount());
 	        partnerDto.setType(partner.isType());
@@ -144,7 +144,7 @@ public abstract interface Helper {
 	        Partner partner = new Partner();
 	        partner.setId(partnerDto.getId());
 	        if (partnerDto.getUserTol() != null) {
-	            partner.setUserTol(parse(partnerDto.getUserTol()));
+	            partner.setUserId(parse(partnerDto.getUserTol()));
 	        }
 	        partner.setAmount(partnerDto.getAmount());
 	        partner.setType(partnerDto.isType());

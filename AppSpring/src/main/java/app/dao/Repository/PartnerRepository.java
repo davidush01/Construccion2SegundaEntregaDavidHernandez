@@ -6,11 +6,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PartnerRepository extends JpaRepository<Partner,Long> {
 	
-	public boolean existsByUserTol(User l);
+	public boolean existsByUserId(User l);
 
 	public Partner findById(long id);
 
-	public Partner findByUserTol(User user); 
+	public Partner findByUserId(User user); 
 	
 	
 
